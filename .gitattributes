@@ -1,0 +1,5 @@
+# Normaliza finales de linea: evita diffs falsos entre Windows, macOS y Linux.
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.svg text eol=lf
