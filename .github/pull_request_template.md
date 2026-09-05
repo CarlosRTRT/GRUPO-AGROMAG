@@ -9,6 +9,3 @@ Closes AGRO-
 1. `npm install`
 2. `npm run dev`
 3. ...
-
-## Capturas
-<!-- Antes / despues si el cambio es visual -->
