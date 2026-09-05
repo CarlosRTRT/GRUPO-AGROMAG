@@ -1,7 +1,5 @@
 # Como trabajamos
 
-Lead: **@CarlosRTRT**. Es el unico que mergea, cualquier PR.
-
 ## Ramas
 
 - `main` — produccion. No se toca.
