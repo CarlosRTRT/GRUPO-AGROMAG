@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  --agromag-ink: #004d36;
+  --agromag-ink-deep: #003b2b;
+  --agromag-sage: #a4d6ac;
+  --agromag-sage-pale: #eaf5ec;
+  --agromag-paper: #ffffff;
+  --agromag-mist: #f5f8f6;
+  --agromag-sand: #f4ede4;
+  --agromag-body: 'DM Sans', sans-serif;
+  --agromag-display: 'Space Grotesk', sans-serif;
+}
+
+html, body { margin: 0; padding: 0; }
+
+.agromag-page { font-family: var(--agromag-body); color: var(--agromag-ink); background: var(--agromag-paper); }
+.agromag-display { font-family: var(--agromag-display); }
+.agromag-shadow { box-shadow: 0 26px 70px rgba(0, 77, 54, 0.14); }
+.agromag-shadow-soft { box-shadow: 0 18px 45px rgba(0, 77, 54, 0.09); }
+.agromag-outline { outline: 2px solid transparent; outline-offset: 4px; }
+.agromag-outline:focus-visible { outline-color: var(--agromag-sage); }
+.hero-copy { text-wrap: balance; }
+.hero-photo { transform: scale(1.01); transition: transform 900ms cubic-bezier(.2,.8,.2,1); }
+.hero-frame:hover .hero-photo { transform: scale(1.06); }
+.service-card { transition: transform 360ms ease, box-shadow 360ms ease; }
+.service-card:hover { transform: translateY(-7px); box-shadow: 0 24px 55px rgba(0, 77, 54, 0.14); }
+.service-card img { transition: transform 700ms cubic-bezier(.2,.8,.2,1); }
+.service-card:hover img { transform: scale(1.05); }
+.reveal { opacity: 1; transform: translateY(0); transition: opacity 700ms ease, transform 700ms ease; }
+.reveal.is-visible { opacity: 1; transform: translateY(0); }
+.reveal-delay-1 { transition-delay: 100ms; }
+.reveal-delay-2 { transition-delay: 180ms; }
+.reveal-delay-3 { transition-delay: 260ms; }
+.marquee-track { animation: agromag-marquee 28s linear infinite; }
+@keyframes agromag-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) {
+  .hero-photo, .service-card, .service-card img, .reveal { transition: none; }
+  .marquee-track { animation: none; }
+}
