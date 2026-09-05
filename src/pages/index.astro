@@ -1,0 +1,584 @@
+---
+import '../styles/global.css';
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Agromag · Clínica veterinaria</title>
+    <meta
+      name="description"
+      content="Medicina veterinaria para mascotas y producción bovina, con precisión clínica y trato cercano."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.31.0/tabler-icons.min.css"
+    />
+  </head>
+  <body>
+    <div class="agromag-page min-h-screen overflow-hidden">
+      <header class="relative z-50 bg-white/95 backdrop-blur-md">
+        <div class="mx-auto flex max-w-[1440px] items-center justify-between px-5 py-5 sm:px-8 lg:px-12">
+          <a
+            aria-label="Agromag, inicio"
+            class="agromag-display text-lg font-bold tracking-[0.18em] text-[var(--agromag-ink)] sm:text-xl"
+            href="#inicio">AGROMAG</a
+          >
+          <nav
+            aria-label="Navegación principal"
+            class="hidden items-center gap-8 text-[10px] font-bold uppercase tracking-[0.24em] text-[var(--agromag-ink)]/70 md:flex">
+            <a class="agromag-outline hover:text-[var(--agromag-ink)]" href="#servicios">Servicios</a>
+            <a class="agromag-outline hover:text-[var(--agromag-ink)]" href="#campo">Campo</a>
+            <a class="agromag-outline hover:text-[var(--agromag-ink)]" href="#contacto">Contacto</a>
+          </nav>
+          <button
+            aria-expanded="false"
+            aria-label="Abrir menú"
+            class="agromag-outline inline-flex h-11 w-11 items-center justify-center rounded-full bg-[var(--agromag-mist)] text-xl text-[var(--agromag-ink)] md:hidden"
+            data-menu-button
+            type="button">
+            <i aria-hidden="true" class="ti ti-menu-2"></i>
+          </button>
+        </div>
+        <div class="hidden bg-[var(--agromag-mist)] px-5 py-5 md:hidden" data-mobile-menu>
+          <nav aria-label="Navegación móvil" class="flex flex-col gap-4 text-xs font-bold uppercase tracking-[0.2em]">
+            <a class="agromag-outline" href="#servicios">Servicios</a>
+            <a class="agromag-outline" href="#campo">Campo</a>
+            <a class="agromag-outline" href="#contacto">Contacto</a>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <!-- Hero -->
+        <section
+          class="relative mx-auto max-w-[1440px] px-5 pb-20 pt-12 sm:px-8 sm:pt-16 lg:px-12 lg:pb-28 lg:pt-20"
+          id="inicio">
+          <div class="grid items-center gap-12 lg:grid-cols-[minmax(0,0.96fr)_minmax(470px,0.84fr)] lg:gap-20">
+            <div class="relative z-10 max-w-[700px]">
+              <div
+                class="reveal inline-flex items-center gap-3 rounded-full bg-[var(--agromag-ink)] px-5 py-3 text-[10px] font-bold uppercase tracking-[0.16em] text-white sm:px-6 sm:text-xs">
+                <span aria-hidden="true" class="h-2.5 w-2.5 rounded-full bg-[var(--agromag-sage)]"></span>
+                Clínica veterinaria Agromag
+              </div>
+              <p class="reveal reveal-delay-1 mt-7 text-[10px] font-bold uppercase tracking-[0.28em] text-[var(--agromag-ink)]/45">
+                Medicina que entiende tu mundo
+              </p>
+              <h1
+                class="hero-copy agromag-display reveal reveal-delay-1 mt-5 text-[clamp(4rem,8.5vw,8.7rem)] font-bold leading-[0.86] tracking-[-0.075em] text-[var(--agromag-ink)]">
+                Cuidamos<br />
+                <span class="text-[var(--agromag-sage)]">de los tuyos.</span>
+              </h1>
+              <p class="reveal reveal-delay-2 mt-8 max-w-[600px] text-lg leading-8 text-[var(--agromag-ink)]/75 sm:text-xl sm:leading-9">
+                Medicina veterinaria para mascotas y producción bovina, con precisión clínica, trato cercano y
+                soluciones que sí se adaptan a tu realidad.
+              </p>
+              <div class="reveal reveal-delay-3 mt-10 flex flex-col gap-7 sm:flex-row sm:items-center sm:gap-10">
+                <a
+                  class="agromag-outline inline-flex min-h-16 items-center justify-center rounded-[22px] bg-[var(--agromag-ink)] px-8 text-base font-bold text-white agromag-shadow-soft hover:bg-[var(--agromag-ink-deep)] sm:px-10"
+                  href="#contacto">
+                  Agendar consulta
+                  <i aria-hidden="true" class="ti ti-arrow-up-right ml-3 text-xl"></i>
+                </a>
+                <div>
+                  <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--agromag-ink)]/45">
+                    Contacto directo
+                  </p>
+                  <a
+                    class="agromag-display mt-1 block text-2xl font-bold tracking-[-0.03em] text-[var(--agromag-ink)]"
+                    href="tel:+503900123456">900 123 456</a
+                  >
+                </div>
+              </div>
+              <div
+                class="reveal reveal-delay-3 mt-12 flex flex-wrap items-center gap-x-8 gap-y-3 bg-[var(--agromag-mist)]/70 px-5 py-5 text-[10px] font-bold uppercase tracking-[0.18em] text-[var(--agromag-ink)]/55 sm:px-6">
+                <span>
+                  <i aria-hidden="true" class="ti ti-shield-check mr-2 text-base text-[var(--agromag-sage)]"></i>
+                  Atención confiable
+                </span>
+                <span>
+                  <i aria-hidden="true" class="ti ti-clock mr-2 text-base text-[var(--agromag-sage)]"></i>
+                  Visitas a domicilio
+                </span>
+              </div>
+            </div>
+
+            <div class="relative mx-auto w-full max-w-[620px] lg:mx-0 lg:ml-auto">
+              <div
+                aria-hidden="true"
+                class="absolute -inset-3 rounded-[54px] bg-[var(--agromag-sage-pale)] sm:-inset-5 sm:rounded-[68px]">
+              </div>
+              <div
+                class="hero-frame relative aspect-[0.82] overflow-hidden rounded-[48px] bg-[var(--agromag-mist)] sm:rounded-[62px]">
+                <img
+                  alt="Veterinario examinando a un perro en una clínica, Mikhail Nilov en Pexels"
+                  class="hero-photo h-full w-full object-cover"
+                  decoding="async"
+                  loading="lazy"
+                  src="https://images.pexels.com/photos/7470634/pexels-photo-7470634.jpeg?auto=compress&cs=tinysrgb&w=1200&q=80"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-[var(--agromag-ink)]/30 via-transparent to-white/10"></div>
+                <div
+                  class="absolute left-5 top-5 rounded-full bg-white/85 px-4 py-2 text-[10px] font-bold uppercase tracking-[0.18em] text-[var(--agromag-ink)] backdrop-blur-md sm:left-7 sm:top-7">
+                  Mascotas + Campo
+                </div>
+              </div>
+              <div
+                class="agromag-shadow absolute -bottom-7 left-5 right-5 rounded-[28px] bg-white p-5 sm:-bottom-9 sm:left-10 sm:right-10 sm:rounded-[34px] sm:p-7">
+                <div class="flex items-center justify-between gap-4">
+                  <div>
+                    <div class="flex items-center gap-3">
+                      <span class="agromag-display text-3xl font-bold text-[var(--agromag-ink)] sm:text-4xl">4.9</span>
+                      <span aria-label="5 estrellas" class="flex gap-0.5 text-lg text-[var(--agromag-sage)]">
+                        <i aria-hidden="true" class="ti ti-star-filled"></i>
+                        <i aria-hidden="true" class="ti ti-star-filled"></i>
+                        <i aria-hidden="true" class="ti ti-star-filled"></i>
+                        <i aria-hidden="true" class="ti ti-star-filled"></i>
+                        <i aria-hidden="true" class="ti ti-star-filled"></i>
+                      </span>
+                    </div>
+                    <p class="mt-2 text-[10px] font-bold uppercase tracking-[0.18em] text-[var(--agromag-ink)]/50">
+                      500+ familias felices
+                    </p>
+                  </div>
+                  <div aria-label="Familias que confían en Agromag" class="flex -space-x-3">
+                    <img
+                      alt="Familia cliente 1"
+                      class="h-11 w-11 rounded-full border-2 border-white object-cover"
+                      decoding="async"
+                      loading="lazy"
+                      src="https://i.pravatar.cc/100?img=12"
+                    />
+                    <img
+                      alt="Familia cliente 2"
+                      class="h-11 w-11 rounded-full border-2 border-white object-cover"
+                      decoding="async"
+                      loading="lazy"
+                      src="https://i.pravatar.cc/100?img=32"
+                    />
+                    <img
+                      alt="Familia cliente 3"
+                      class="h-11 w-11 rounded-full border-2 border-white object-cover"
+                      decoding="async"
+                      loading="lazy"
+                      src="https://i.pravatar.cc/100?img=47"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Indicadores -->
+        <section aria-label="Indicadores de confianza" class="bg-[var(--agromag-mist)] py-9">
+          <div class="mx-auto grid max-w-[1440px] grid-cols-2 gap-8 px-5 sm:px-8 lg:grid-cols-4 lg:px-12">
+            <div class="reveal">
+              <p class="agromag-display text-4xl font-bold tracking-[-0.06em]">
+                15<span class="text-2xl text-[var(--agromag-sage)]">+</span>
+              </p>
+              <p class="mt-2 text-[10px] font-bold uppercase tracking-[0.16em] text-[var(--agromag-ink)]/50">
+                Años de experiencia
+              </p>
+            </div>
+            <div class="reveal reveal-delay-1">
+              <p class="agromag-display text-4xl font-bold tracking-[-0.06em]">
+                12k<span class="text-2xl text-[var(--agromag-sage)]">+</span>
+              </p>
+              <p class="mt-2 text-[10px] font-bold uppercase tracking-[0.16em] text-[var(--agromag-ink)]/50">
+                Pacientes atendidos
+              </p>
+            </div>
+            <div class="reveal reveal-delay-2">
+              <p class="agromag-display text-4xl font-bold tracking-[-0.06em]">
+                24<span class="text-2xl text-[var(--agromag-sage)]">/7</span>
+              </p>
+              <p class="mt-2 text-[10px] font-bold uppercase tracking-[0.16em] text-[var(--agromag-ink)]/50">
+                Respuesta cercana
+              </p>
+            </div>
+            <div class="reveal reveal-delay-3">
+              <p class="agromag-display text-4xl font-bold tracking-[-0.06em]">
+                2<span class="ml-2 text-2xl text-[var(--agromag-sage)]">mundos</span>
+              </p>
+              <p class="mt-2 text-[10px] font-bold uppercase tracking-[0.16em] text-[var(--agromag-ink)]/50">
+                Mascotas y ganadería
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Servicios -->
+        <section class="mx-auto max-w-[1440px] px-5 py-24 sm:px-8 lg:px-12 lg:py-36" id="servicios">
+          <div class="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
+            <div>
+              <p class="reveal text-[10px] font-bold uppercase tracking-[0.28em] text-[var(--agromag-ink)]/45">
+                Todo lo que necesitan, en un solo lugar
+              </p>
+              <h2 class="agromag-display reveal reveal-delay-1 mt-4 text-5xl font-bold leading-[0.94] tracking-[-0.065em] sm:text-7xl">
+                Nuestros<br />
+                <span class="text-[var(--agromag-sage)]">servicios.</span>
+              </h2>
+            </div>
+            <div class="reveal reveal-delay-2 flex max-w-[520px] items-end text-base leading-7 text-[var(--agromag-ink)]/65 lg:justify-self-end">
+              Una atención completa para cuidar animales, diagnosticar a tiempo y acompañar decisiones productivas. Sin
+              saltos, sin menús escondidos: todo lo que hacemos está aquí.
+            </div>
+          </div>
+
+          <div class="mt-14 grid gap-5 lg:grid-cols-12">
+            <article class="service-card reveal overflow-hidden rounded-[38px] bg-[var(--agromag-sage-pale)] lg:col-span-7">
+              <div class="grid min-h-[470px] md:grid-cols-[0.84fr_1.16fr]">
+                <div class="flex flex-col justify-between p-8 sm:p-10">
+                  <div>
+                    <span class="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-white text-2xl text-[var(--agromag-ink)]">
+                      <i aria-hidden="true" class="ti ti-heart-rate-monitor"></i>
+                    </span>
+                    <p class="mt-8 text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--agromag-ink)]/50">
+                      01 · Clínica y diagnóstico
+                    </p>
+                    <h3 class="agromag-display mt-3 text-3xl font-bold leading-tight tracking-[-0.05em] sm:text-4xl">
+                      Cuidado preciso, de principio a fin.
+                    </h3>
+                    <p class="mt-5 text-sm leading-6 text-[var(--agromag-ink)]/70">
+                      Cirugías, pruebas y controles para entender lo que necesitan antes de que se convierta en una
+                      urgencia.
+                    </p>
+                  </div>
+                  <a
+                    class="agromag-outline mt-8 inline-flex items-center text-xs font-bold uppercase tracking-[0.16em]"
+                    href="#contacto">
+                    Conocer más
+                    <i aria-hidden="true" class="ti ti-arrow-up-right ml-2 text-lg"></i>
+                  </a>
+                </div>
+                <div class="relative min-h-[270px] overflow-hidden">
+                  <img
+                    alt="Veterinario atendiendo a un perro en consulta, Tima Miroshnichenko en Pexels"
+                    class="h-full w-full object-cover"
+                    decoding="async"
+                    loading="lazy"
+                    src="https://images.pexels.com/photos/6235231/pexels-photo-6235231.jpeg?auto=compress&cs=tinysrgb&w=900&q=80"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-[var(--agromag-ink)]/45 to-transparent"></div>
+                  <span class="absolute bottom-6 left-6 rounded-full bg-white/90 px-4 py-2 text-[10px] font-bold uppercase tracking-[0.18em] text-[var(--agromag-ink)]">
+                    Precisión + empatía
+                  </span>
+                </div>
+              </div>
+            </article>
+
+            <article class="service-card reveal reveal-delay-1 rounded-[38px] bg-[var(--agromag-ink)] p-8 text-white sm:p-10 lg:col-span-5">
+              <div class="flex min-h-[470px] flex-col justify-between">
+                <div>
+                  <span class="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-white/10 text-2xl text-[var(--agromag-sage)]">
+                    <i aria-hidden="true" class="ti ti-microscope"></i>
+                  </span>
+                  <p class="mt-8 text-[10px] font-bold uppercase tracking-[0.2em] text-white/55">
+                    02 · Laboratorio clínico
+                  </p>
+                  <h3 class="agromag-display mt-3 text-3xl font-bold leading-tight tracking-[-0.05em] sm:text-4xl">
+                    Datos que ayudan a decidir.
+                  </h3>
+                  <p class="mt-5 max-w-[380px] text-sm leading-6 text-white/70">
+                    Hemograma y química sanguínea para encontrar respuestas en lo que no siempre se ve.
+                  </p>
+                </div>
+                <div class="mt-10 flex flex-wrap gap-3 text-xs font-bold uppercase tracking-[0.12em] text-[var(--agromag-sage)]">
+                  <span class="rounded-full bg-white/10 px-4 py-3">Hemograma</span>
+                  <span class="rounded-full bg-white/10 px-4 py-3">Química sanguínea</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="service-card reveal reveal-delay-2 relative min-h-[330px] overflow-hidden rounded-[38px] lg:col-span-5">
+              <img
+                alt="Detalle de la sonrisa de un perro"
+                class="absolute inset-0 h-full w-full object-cover"
+                decoding="async"
+                loading="lazy"
+                src="https://images.pexels.com/photos/6568461/pexels-photo-6568461.jpeg?auto=compress&cs=tinysrgb&w=900&q=80"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-[var(--agromag-ink)]/90 via-[var(--agromag-ink)]/35 to-transparent"></div>
+              <div class="absolute inset-x-8 bottom-8 text-white sm:inset-x-10 sm:bottom-10">
+                <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-white/65">03 · Bienestar</p>
+                <h3 class="agromag-display mt-3 text-3xl font-bold tracking-[-0.05em]">Limpiezas dentales</h3>
+                <p class="mt-3 max-w-[330px] text-sm leading-6 text-white/75">
+                  Una sonrisa sana también cambia su calidad de vida.
+                </p>
+              </div>
+            </article>
+
+            <article class="service-card reveal reveal-delay-3 rounded-[38px] bg-[var(--agromag-sand)] p-8 sm:p-10 lg:col-span-7">
+              <div class="flex min-h-[330px] flex-col justify-between gap-10 md:flex-row md:items-end">
+                <div class="max-w-[520px]">
+                  <span class="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-white text-2xl text-[var(--agromag-ink)]">
+                    <i aria-hidden="true" class="ti ti-home-heart"></i>
+                  </span>
+                  <p class="mt-8 text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--agromag-ink)]/50">
+                    04 · Atención cercana
+                  </p>
+                  <h3 class="agromag-display mt-3 text-3xl font-bold leading-tight tracking-[-0.05em] sm:text-4xl">
+                    Cuidado que llega a ellos.
+                  </h3>
+                  <p class="mt-4 text-sm leading-6 text-[var(--agromag-ink)]/70">
+                    Visitas médicas a domicilio, corte de pelo y acompañamiento para que se sientan bien de verdad.
+                  </p>
+                </div>
+                <div class="flex flex-wrap gap-3 text-xs font-bold uppercase tracking-[0.12em] text-[var(--agromag-ink)]">
+                  <span class="rounded-full bg-white/70 px-4 py-3">Domicilio</span>
+                  <span class="rounded-full bg-white/70 px-4 py-3">Corte de pelo</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="service-card reveal rounded-[38px] bg-[#dcefe0] p-8 sm:p-10 lg:col-span-7">
+              <div class="flex min-h-[390px] flex-col justify-between md:flex-row md:items-end md:gap-10">
+                <div class="max-w-[620px]">
+                  <span class="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-white text-2xl text-[var(--agromag-ink)]">
+                    <i aria-hidden="true" class="ti ti-cow"></i>
+                  </span>
+                  <p class="mt-8 text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--agromag-ink)]/50">
+                    05 · Ganadería y campo
+                  </p>
+                  <h3 class="agromag-display mt-3 text-3xl font-bold leading-tight tracking-[-0.05em] sm:text-4xl">
+                    Más claridad para cada animal y cada decisión.
+                  </h3>
+                  <p class="mt-5 max-w-[520px] text-sm leading-6 text-[var(--agromag-ink)]/70">
+                    Trazabilidad bovina, asesorías técnicas productivas y servicio de rumen para fortalecer tu operación
+                    desde adentro.
+                  </p>
+                </div>
+                <i aria-hidden="true" class="ti ti-arrow-up-right text-5xl text-[var(--agromag-ink)]"></i>
+              </div>
+            </article>
+
+            <article class="service-card reveal reveal-delay-1 rounded-[38px] bg-[var(--agromag-ink-deep)] p-8 text-white sm:p-10 lg:col-span-5">
+              <div class="flex min-h-[390px] flex-col justify-between">
+                <div>
+                  <span class="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-white/10 text-2xl text-[var(--agromag-sage)]">
+                    <i aria-hidden="true" class="ti ti-shield-check"></i>
+                  </span>
+                  <p class="mt-8 text-[10px] font-bold uppercase tracking-[0.2em] text-white/55">06 · Sanidad bovina</p>
+                  <h3 class="agromag-display mt-3 text-3xl font-bold leading-tight tracking-[-0.05em] sm:text-4xl">
+                    Exámenes que protegen tu producción.
+                  </h3>
+                  <p class="mt-5 text-sm leading-6 text-white/70">
+                    Pruebas de tuberculosis y brucelosis bovina, con acompañamiento técnico en cada paso.
+                  </p>
+                </div>
+                <div class="mt-10 flex flex-wrap gap-3 text-xs font-bold uppercase tracking-[0.12em] text-[var(--agromag-sage)]">
+                  <span class="rounded-full bg-white/10 px-4 py-3">Tuberculosis</span>
+                  <span class="rounded-full bg-white/10 px-4 py-3">Brucelosis</span>
+                </div>
+              </div>
+            </article>
+
+            <div class="reveal reveal-delay-2 flex flex-wrap items-center gap-3 rounded-[30px] bg-[var(--agromag-mist)] px-6 py-6 text-xs font-bold uppercase tracking-[0.14em] text-[var(--agromag-ink)]/65 lg:col-span-12 lg:px-8">
+              <span class="mr-2 text-[10px] tracking-[0.24em] text-[var(--agromag-ink)]/40">También cuidamos</span>
+              <span class="rounded-full bg-white px-4 py-3">Radiografías</span>
+              <span class="rounded-full bg-white px-4 py-3">Servicio de rumen</span>
+              <span class="rounded-full bg-white px-4 py-3">Asesorías productivas</span>
+              <span class="rounded-full bg-white px-4 py-3">Trazabilidad bovina</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Campo -->
+        <section class="bg-[var(--agromag-ink)] text-white" id="campo">
+          <div class="mx-auto grid max-w-[1440px] items-stretch lg:grid-cols-[1fr_0.95fr]">
+            <div class="flex flex-col justify-center px-5 py-20 sm:px-8 lg:px-16 lg:py-28">
+              <p class="reveal text-[10px] font-bold uppercase tracking-[0.28em] text-[var(--agromag-sage)]">
+                Atención donde la necesites
+              </p>
+              <h2 class="agromag-display reveal reveal-delay-1 mt-5 max-w-[620px] text-5xl font-bold leading-[0.94] tracking-[-0.065em] sm:text-7xl">
+                Del consultorio<br />
+                <span class="text-[var(--agromag-sage)]">al potrero.</span>
+              </h2>
+              <p class="reveal reveal-delay-2 mt-7 max-w-[550px] text-lg leading-8 text-white/70">
+                Visitas médicas a domicilio y acompañamiento técnico productivo para responder con rapidez, sin importar
+                el tamaño de tu familia o de tu operación.
+              </p>
+              <a
+                class="agromag-outline reveal reveal-delay-3 mt-9 inline-flex w-fit items-center rounded-full bg-white px-7 py-4 text-sm font-bold text-[var(--agromag-ink)] hover:bg-[var(--agromag-sage)]"
+                href="#contacto">
+                Hablemos
+                <i aria-hidden="true" class="ti ti-arrow-up-right ml-3 text-xl"></i>
+              </a>
+            </div>
+            <div class="relative min-h-[460px] overflow-hidden lg:min-h-[640px]">
+              <img
+                alt="Productores atendiendo ganado en el campo, Holman Ferney Rincon Vargas en Pexels"
+                class="h-full w-full object-cover"
+                decoding="async"
+                loading="lazy"
+                src="https://images.pexels.com/photos/20807530/pexels-photo-20807530.jpeg?auto=compress&cs=tinysrgb&w=1100&q=80"
+              />
+              <div class="absolute inset-0 bg-gradient-to-r from-[var(--agromag-ink)]/70 via-transparent to-transparent"></div>
+              <div class="absolute bottom-7 left-7 right-7 flex items-end justify-between gap-4 sm:bottom-10 sm:left-10 sm:right-10">
+                <span class="rounded-full bg-[var(--agromag-ink)]/45 px-4 py-2 text-[10px] font-bold uppercase tracking-[0.16em] backdrop-blur-md">
+                  Servicio en campo
+                </span>
+                <span class="agromag-display text-6xl font-bold tracking-[-0.08em] text-white/70">02</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Testimonios -->
+        <section aria-label="Testimonios de clientes" class="overflow-hidden bg-white py-8">
+          <div class="marquee-track flex w-max items-center gap-14 whitespace-nowrap text-sm font-medium text-[var(--agromag-ink)]/70 sm:gap-20 sm:text-base">
+            <span>
+              “Nos explicaron cada paso y nuestra perrita volvió a casa tranquila.”
+              <strong class="text-[var(--agromag-ink)]">— Lucía &amp; Max</strong>
+            </span>
+            <span aria-hidden="true" class="text-2xl text-[var(--agromag-sage)]">✦</span>
+            <span>
+              “Por fin sentimos que el campo y la clínica hablan el mismo idioma.”
+              <strong class="text-[var(--agromag-ink)]">— Carlos, Finca El Roble</strong>
+            </span>
+            <span aria-hidden="true" class="text-2xl text-[var(--agromag-sage)]">✦</span>
+            <span>
+              “El servicio de grooming dejó a Toby relajado y feliz.”
+              <strong class="text-[var(--agromag-ink)]">— Marta &amp; Toby</strong>
+            </span>
+            <span aria-hidden="true" class="text-2xl text-[var(--agromag-sage)]">✦</span>
+            <span aria-hidden="true">
+              “Nos explicaron cada paso y nuestra perrita volvió a casa tranquila.”
+              <strong class="text-[var(--agromag-ink)]">— Lucía &amp; Max</strong>
+            </span>
+            <span aria-hidden="true" class="text-2xl text-[var(--agromag-sage)]">✦</span>
+            <span aria-hidden="true">
+              “Por fin sentimos que el campo y la clínica hablan el mismo idioma.”
+              <strong class="text-[var(--agromag-ink)]">— Carlos, Finca El Roble</strong>
+            </span>
+          </div>
+        </section>
+
+        <!-- Contacto -->
+        <section class="mx-auto max-w-[1440px] px-5 py-16 sm:px-8 lg:px-12 lg:py-24" id="contacto">
+          <div class="agromag-shadow-soft relative overflow-hidden rounded-[38px] bg-[var(--agromag-sage-pale)] px-6 py-12 sm:px-12 sm:py-16 lg:px-20 lg:py-20">
+            <div class="relative z-10 grid items-end gap-10 lg:grid-cols-[1fr_auto] lg:gap-16">
+              <div>
+                <p class="reveal text-[10px] font-bold uppercase tracking-[0.28em] text-[var(--agromag-ink)]/50">
+                  Tu próximo paso empieza aquí
+                </p>
+                <h2 class="agromag-display reveal reveal-delay-1 mt-5 max-w-[780px] text-5xl font-bold leading-[0.94] tracking-[-0.07em] text-[var(--agromag-ink)] sm:text-7xl">
+                  ¿Necesitas ayuda<br />
+                  <span class="text-[var(--agromag-sage)]">con los tuyos?</span>
+                </h2>
+              </div>
+              <a
+                class="agromag-outline reveal reveal-delay-2 inline-flex min-h-16 items-center justify-center rounded-full bg-[var(--agromag-ink)] px-8 text-sm font-bold text-white hover:bg-[var(--agromag-ink-deep)]"
+                href="tel:+503900123456">
+                Contactar ahora
+                <i aria-hidden="true" class="ti ti-arrow-up-right ml-3 text-xl"></i>
+              </a>
+            </div>
+            <div
+              aria-hidden="true"
+              class="absolute -bottom-24 -right-8 h-64 w-64 rounded-full border-[24px] border-white/70 sm:-bottom-32 sm:-right-10 sm:h-96 sm:w-96 sm:border-[32px]">
+            </div>
+            <div aria-hidden="true" class="absolute -right-16 -top-20 h-60 w-60 rounded-full bg-white/50"></div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="bg-[var(--agromag-mist)] px-5 py-12 sm:px-8 lg:px-12 lg:py-16">
+        <div class="mx-auto grid max-w-[1440px] gap-12 md:grid-cols-[1.3fr_0.8fr_0.8fr_1fr] md:gap-10">
+          <div>
+            <a class="agromag-display text-xl font-bold tracking-[0.16em] text-[var(--agromag-ink)]" href="#inicio">AGROMAG</a>
+            <p class="mt-5 max-w-[280px] text-sm leading-6 text-[var(--agromag-ink)]/60">
+              Excelencia veterinaria y acompañamiento productivo para cuidar lo que más importa.
+            </p>
+            <div class="mt-6 flex gap-3">
+              <a
+                aria-label="Instagram"
+                class="agromag-outline inline-flex h-9 w-9 items-center justify-center rounded-full bg-white"
+                href="#">
+                <i aria-hidden="true" class="ti ti-brand-instagram"></i>
+              </a>
+              <a
+                aria-label="Facebook"
+                class="agromag-outline inline-flex h-9 w-9 items-center justify-center rounded-full bg-white"
+                href="#">
+                <i aria-hidden="true" class="ti ti-brand-facebook"></i>
+              </a>
+              <a
+                aria-label="WhatsApp"
+                class="agromag-outline inline-flex h-9 w-9 items-center justify-center rounded-full bg-white"
+                href="#">
+                <i aria-hidden="true" class="ti ti-brand-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-[10px] font-bold uppercase tracking-[0.24em] text-[var(--agromag-ink)]/50">Servicios</h3>
+            <ul class="mt-5 space-y-3 text-sm text-[var(--agromag-ink)]/70">
+              <li><a class="agromag-outline hover:text-[var(--agromag-ink)]" href="#servicios">Clínica y diagnóstico</a></li>
+              <li><a class="agromag-outline hover:text-[var(--agromag-ink)]" href="#servicios">Laboratorio</a></li>
+              <li><a class="agromag-outline hover:text-[var(--agromag-ink)]" href="#servicios">Ganadería</a></li>
+              <li><a class="agromag-outline hover:text-[var(--agromag-ink)]" href="#servicios">Bienestar</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-[10px] font-bold uppercase tracking-[0.24em] text-[var(--agromag-ink)]/50">Horarios</h3>
+            <p class="mt-5 text-sm leading-7 text-[var(--agromag-ink)]/70">
+              Lunes — Sábado<br />
+              8:00 am — 6:00 pm<br />
+              <span class="font-bold text-[var(--agromag-ink)]">Emergencias · 24/7</span>
+            </p>
+          </div>
+          <div>
+            <h3 class="text-[10px] font-bold uppercase tracking-[0.24em] text-[var(--agromag-ink)]/50">Contacto</h3>
+            <p class="mt-5 text-sm leading-7 text-[var(--agromag-ink)]/70">
+              San Salvador, El Salvador<br />
+              <a class="agromag-outline hover:text-[var(--agromag-ink)]" href="tel:+503900123456">900 123 456</a><br />
+              <a class="agromag-outline hover:text-[var(--agromag-ink)]" href="mailto:hola@agromag.vet">hola@agromag.vet</a>
+            </p>
+          </div>
+        </div>
+        <div class="mx-auto mt-12 flex max-w-[1440px] flex-col justify-between gap-3 bg-white/50 px-5 py-5 text-[10px] font-bold uppercase tracking-[0.16em] text-[var(--agromag-ink)]/40 sm:flex-row sm:px-6">
+          <span>© 2026 Agromag Veterinary Care</span>
+          <span>Cuidar también es conocerlos</span>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      const menuButton = document.querySelector('[data-menu-button]');
+      const mobileMenu = document.querySelector('[data-mobile-menu]');
+      if (menuButton && mobileMenu) {
+        menuButton.addEventListener('click', () => {
+          const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
+          menuButton.setAttribute('aria-expanded', String(!isOpen));
+          mobileMenu.classList.toggle('hidden', isOpen);
+          menuButton.innerHTML = isOpen
+            ? '<i class="ti ti-menu-2" aria-hidden="true"></i>'
+            : '<i class="ti ti-x" aria-hidden="true"></i>';
+        });
+      }
+
+      const revealObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              revealObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.14 }
+      );
+      document.querySelectorAll('.reveal').forEach((item) => revealObserver.observe(item));
+    </script>
+  </body>
+</html>
