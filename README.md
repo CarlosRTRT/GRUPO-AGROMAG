@@ -34,3 +34,8 @@ public/                # assets estaticos (favicon, imagenes)
 
 Git Flow + Jira. **Antes de tocar codigo, lee [CONTRIBUTING.md](./CONTRIBUTING.md).**
 Resumen: rama desde `develop`, PR a `develop`, lo mergea el lead.
+
+## Herramientas de ayuda para ahorrar tokens 90%
+
+- Repomix(Comprime todo el proyecto en md con estructuracion): https://github.com/yamadashy/repomix
+- CloudConvert(Word a Markdown): https://cloudconvert.com/docx-to-md
